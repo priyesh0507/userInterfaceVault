@@ -1,6 +1,6 @@
 # Stage 1
 
-FROM dockerhub.gemalto.com/gemalto/alpine.nodejs.npm:12.20.2-1374-alpine.3.12-nodejs.12 as builder
+FROM dockerhub.gemalto.com/gemalto/alpine.nodejs.npm:latest as builder
 RUN mkdir -p /app
 WORKDIR /app
 COPY package.json /app
