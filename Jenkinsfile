@@ -22,11 +22,6 @@ pipeline {
                 sh 'npm install'
             }
         }
-		    stage ('Lint') {
-            steps {
-                sh 'ng lint'
-            }
-        }
         stage("Build image") {
             steps {
                 script {
