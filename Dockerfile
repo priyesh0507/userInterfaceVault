@@ -1,7 +1,7 @@
 # Stage 1
 
 FROM node:16.10-alpine as build-step
-RUN apk add --update python make g++\
+RUN apk add --update python3 make g++\
    && rm -rf /var/cache/apk/*
 RUN mkdir -p /app
 WORKDIR /app
