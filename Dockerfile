@@ -1,6 +1,6 @@
 # Stage 1
 
-FROM dockerhub.gemalto.com/gemalto/alpine.nodejs.npm:latest as builder
+FROM dockerhub.gemalto.com/gemalto/alpine.nodejs.npm:latest as build-step
 RUN apk add --update python make g++\
    && rm -rf /var/cache/apk/*
 RUN mkdir -p /app
