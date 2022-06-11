@@ -22,7 +22,7 @@ pipeline {
                 sh 'npm install'
             }
         }
-		stage ('Lint') {
+		    stage ('Lint') {
             steps {
                 sh 'ng lint'
             }
