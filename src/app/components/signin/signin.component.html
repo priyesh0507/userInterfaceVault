@@ -1,0 +1,68 @@
+<app-header></app-header>
+<!-- Form-->
+
+<div class="contact-section style-two pt-100 pb-100" style="margin-top: 102px;">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-9 col-md-12">
+        <div class="contact_from upper10">
+          <div class="dreamit-section-title">
+            <div class="dreamit-section-sub-title">
+              <h5>Account Login</h5>
+            </div>
+          </div>
+          <form [formGroup]="loginUser">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form_box mb-2">
+                  <input class="form-control" #email type="text" formControlName="email" placeholder="Email" />
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form_box mb-1">
+                  <input class="form-control" #password type="password" formControlName="password" placeholder="Password">
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6">
+                <label class="form-remember">
+                  <input formControllerName="remember" type="checkbox" /> Remember Me
+                </label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="form-group" *ngIf="!alertMessage?.length">
+                 <p style="color: red;">{{alertMessage.message}}</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="form-group">
+                  <button (click)="loginSubmit(loginUser.value)" [disabled]="loginUser.invalid">Log In</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="form-group">
+                  <a class="form-recovery" href="#" style="color:#0B0B47">Forgot Password?</a>
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

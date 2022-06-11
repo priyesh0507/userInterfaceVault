@@ -1,0 +1,314 @@
+<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+<!--==================================================-->
+	<!--START FOOTER SECTION-->
+	<!--===================================================-->
+	<div class="footer pt-100">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-location-box">
+						<div class="footer-logo">
+							<img src="assets/images/one.png" alt="Footer-logo">
+						</div>
+						<div class="footer-content">
+							<p>There are many variations of pass of Lorem Ipsum available, but the majority have suffered</p>
+						</div>
+					</div>
+					<div class="footer-social-box">
+						<div class="social-content">
+							<h3>Follow Us</h3>
+						</div>
+						<div class="footer-about-social-icon pt-20">
+						<ul>
+							<li>
+								<a href="#"><i class="fab fa-facebook-f"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fab fa-twitter"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fab fa-pinterest"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fab fa-linkedin-in"></i></a>
+							</li>
+						</ul>
+					</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="widget">
+						<div class="footer-quick-link">
+							<div class="footer-widget-title">
+								<h3>Help Links</h3>
+							</div>
+							<div class="footer-quick-link-list">
+								<ul>
+									<li><a href="#">What Is ICO</a></li>
+									<li><a href="#">Token</a></li>
+									<li><a href="#">Road Map</a></li>
+									<li><a href="#">Advisor</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="widget">
+						<div class="footer-quick-link-list">
+							<div class="footer-widget-title">
+								<h3>Quick Links</h3>
+							</div>
+							<div class="footer-quick-link-list">
+								<ul>
+									<li><a href="#">ICO Apps</a></li>
+									<li><a href="#">White Papers</a></li>
+									<li><a href="#">Teams</a></li>
+									<li><a href="#">Join Us</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 p-0">
+					<div class="widget">
+						<div class="footer-popular-post ">
+							<div class="footer-widget-title two">
+								<h3>Newsletter</h3>
+							</div>
+							<div class="footer-content-text">
+								<p>Sent Us a Newsletter And Get Update</p>
+							</div>
+							<form>
+								<div class="subscribe-area">
+									<input class="subscribe-mail-box" type="email"  placeholder="Enter Your Email...." required="">
+									<button class="subscribe-button" type="submit">Subscribe</button>
+								</div>
+							</form>
+						
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="row upper11 mt-50 align-items-center">
+				<div class="col-lg-6 col-md-6">
+					<div class="footer-copyright-text">
+						<p class="text-white">Copyright © cryptozen all rights reserved. </p>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6">
+					<div class="footer-copyright-content">
+						<div class="footer-sicial-address-link">
+							<ul>
+								<li><a href="#">Terms Condition</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+								<li><a href="#">FAQ</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(window).on('scroll', function () {
+	   var scrolled = $(window).scrollTop();
+	   if (scrolled > 300) $('.go-top').addClass('active');
+	   if (scrolled < 300) $('.go-top').removeClass('active');
+   });
+
+   $('.go-top').on('click', function () {
+	   $("html, body").animate({
+		   scrollTop: "0"
+	   }, 1200);
+   });
+   </script>
+
+   <script>
+	   "use strict";
+	   jQuery,
+	   jQuery(document).ready(function (o) {
+		   alert("hjhj");
+		   0 < o(".offset-side-bar").length &&
+		   o(".offset-side-bar").on("click", function (e) {
+			   e.preventDefault(), e.stopPropagation(), o(".cart-group").addClass("isActive");
+		   }),
+		   0 < o(".close").length &&
+		   o(".close").on("click", function (e) {
+			   e.preventDefault(), o(".cart-group").removeClass("isActive");
+		   }),
+		   0 < o(".navSidebar-button").length &&
+		   o(".navSidebar-button").on("click", function (e) {
+			   e.preventDefault(), e.stopPropagation(), o(".info-group").addClass("isActive");
+		   }),
+		   0 < o(".close").length &&
+		   o(".close").on("click", function (e) {
+			   e.preventDefault(), o(".info-group").removeClass("isActive");
+		   }),
+		   o("body").on("click", function (e) {
+			   o(".info-group").removeClass("isActive"), o(".cart-group").removeClass("isActive");
+		   }),
+		   o(".dt-sidebar-widget").on("click", function (e) {
+			   e.stopPropagation();
+		   }),
+		   0 < o(".xs-modal-popup").length &&
+		   o(".xs-modal-popup").magnificPopup({
+			   type: "inline",
+			   fixedContentPos: !1,
+			   fixedBgPos: !0,
+			   overflowX: "auto",
+			   closeBtnInside: !1,
+			   callbacks: {
+				   beforeOpen: function () {
+					   this.st.mainClass = "my-mfp-slide-bottom xs-promo-popup";
+				   },
+			   },
+		   });
+	   });
+
+   </script>
+   <script>
+
+// Set the date we're counting down to
+var countDownDate = new Date("July 17, 2022 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+ // Get today's date and time
+ var now = new Date().getTime();
+ 
+ // Find the distance between now and the count down date
+ var distance = countDownDate - now;
+ 
+ // Time calculations for days, hours, minutes and seconds
+ var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+ var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+ var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+ var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+ 
+ // Output the result in an element with id="demo"
+ 
+ //document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+ + minutes + "m " + seconds + "s ";
+ 
+ document.getElementById("days").innerHTML = days ;
+ document.getElementById("hours").innerHTML = hours ;
+ document.getElementById("minutes").innerHTML = minutes ;
+ document.getElementById("seconds").innerHTML = seconds ;
+
+ // If the count down is over, write some text 
+ if (distance < 0) {
+	 clearInterval(x);
+	 document.getElementById("demo").innerHTML = "EXPIRED";
+ }
+}, 1000);
+
+</script>
+<script>
+   
+ /* Extra class "tab_last" 
+	to add border to right side
+	of last tab */
+	$('ul.tabs li').last().addClass("tab_last");
+
+	$(document).ready(function() {
+		$('#example').DataTable();
+
+		$('#avaiable').on('click',function(){
+			$('.single').show();
+			$('.double').hide();
+			$('.one').hide();
+			$('triple').hide();
+		});
+
+		$('#gainers').on('click',function(){
+			$('triple').show();
+			$('.single').hide();
+			$('.double').hide();
+		});
+
+		$('#losers').on('click',function(){
+			$('triple').hide();
+			$('.single').hide();
+			$('.double').hide();
+			$('.one').show();
+		});
+
+		$('#date').on('click',function(){
+			$('triple').hide();
+			$('.single').hide();
+			$('.double').hide();
+			$('.one').hide();
+			$('.two').show();
+		});
+		$('#all_token').on('click',function(){
+			$('triple').show();
+			$('.single').show();
+			$('.double').show();
+			$('.two').show();
+			$('.one').show();
+		});
+
+	} );
+</script>
+<script>
+	
+	var xValues = ["Contingency", "France", "Spain", "USA", "Argentina"];
+	var yValues = [40, 49, 44, 24, 15];
+	var barColors = [
+	"#AA3BC5",
+	"#09B1F2",
+	"#1FD5A4",
+	"#FEB81A",
+	"#F97431"
+	];
+	new Chart("myChart", {
+		type: "polarArea",
+		data: {
+			labels: xValues,
+			datasets: [{
+				label: 'Dataset 1',
+				backgroundColor: barColors,
+				data: yValues
+			}]
+		},
+		options: {
+			title: {
+				display: true,
+				text: "World Wide Wine Production 2018"
+			},
+		}
+	});
+
+   // Style Two
+   var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+   var yValues = [55, 49, 44, 24, 15];
+   var barColors = [
+   "#4DB866",
+   "#EDB019",
+   "#E36D23",
+   "#F08A1E",
+   "#39A2D1"
+   ];
+
+   new Chart("yourChart", {
+	   type: "doughnut",
+	   data: {
+		   labels: xValues,
+		   datasets: [{
+			   backgroundColor: barColors,
+			   data: yValues
+		   }]
+	   },
+	   options: {
+		   title: {
+			   display: true,
+			   text: "World Wide Wine Production 2018"
+		   },
+	   }
+   });
+
+
+</script>

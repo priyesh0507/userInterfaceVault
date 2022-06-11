@@ -1,0 +1,57 @@
+<>
+<app-header></app-header>
+<div class="contact-section style-two pt-100 pb-100" style="margin-top: 102px;" >
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-9 col-md-12">
+                <div class="contact_from upper10">
+                    <div class="dreamit-section-title">
+                        <div class="dreamit-section-sub-title">
+                            <h5>Request For a Token</h5>
+                        </div>
+                    </div>
+                    <form [formGroup]="registerUser">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form_box mb-2">
+                                    <input class="form-control" #username type="text" formControlName="username"
+                                        placeholder="Name" />
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form_box mb-2">
+                                    <input class="form-control" #email type="email" formControlName="email"
+                                        placeholder="Email" />
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form_box mb-1">
+                                    <input class="form-control" #organization type="organization"
+                                        formControlName="organization" placeholder="Organization">
+                                </div>
+                            </div>
+                            <!-- <div class="col-lg-6">
+                                <div class="form_box mb-1">
+                                    <input class="form-control" #userId type="userId" formControlName="userId"
+                                        placeholder="User ID">
+                                </div>
+                            </div> -->
+                            <div class="col-lg-12">
+                                <div class="form_box pt-1">
+                                    <textarea class="form-control" #requestFor type="text" formControlName="requestFor"
+                                        cols="10" rows="5" placeholder=" Comment"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="form-group">
+                                    <button (click)="registerSubmit(registerUser.value)"
+                                        [disabled]="registerUser.invalid">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
