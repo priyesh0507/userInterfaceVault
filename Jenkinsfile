@@ -47,7 +47,7 @@ pipeline {
         stage("Deployment") {
             steps {
                 script {
-                    sh("sudo kubectl apply -f deployment.yaml")
+                    sh("sudo kubectl apply -f uiv-deployment.yaml")
                 }
             }
         }
